@@ -1,0 +1,1 @@
+{'W1': 'do', 'W2': 'else', 'W3': 'for', 'W4': 'continue', 'W5': 'if', 'W6': 'echo', 'W7': 'return', 'W8': 'include', 'W9': 'while', 'W10': 'gettype'}

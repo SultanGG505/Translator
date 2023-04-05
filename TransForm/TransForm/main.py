@@ -1,26 +1,26 @@
 import tkinter as tk
-import json
+
 
 SERVICE_WORDS = ['do', 'else', 'for', 'continue', 'if', 'echo', 'return', 'include', \
-                 'while']
+                 'while', 'gettype']
 OPERATIONS = ['!', '!=', '%', '&&', '*', '**', '+', '-', '..', '/', '<', '<=', '=', \
               '==', '>', '>=', '||']
 SEPARATORS = ['\n', ' ', '(', ')', ',', ':', ';', '[', ']', '{', '}', '<?php', '?>']
 
 def Analyze():
-    f=open("tokens.txt", 'r')
+    f=open("C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/tokens.txt", 'r')
     new_text=f.read()
-    t_t = tk.Label(window, text="Токены:", font='Times 30')
-    tokens_text = tk.Label(window, text=new_text, borderwidth=3, relief='solid', font='Times 20', justify='left')
-    t_t.place(x=360, y=250)
-    tokens_text.place(x=360, y=300)
+    # t_t = tk.Label(window, text="Токены:", font='Times 30')
+    # tokens_text = tk.Label(window, text=new_text, borderwidth=3, relief='solid', font='Times 20', justify='left')
+    # t_t.place(x=360, y=250)
+    # tokens_text.place(x=360, y=300)
     f.close()
-    s=open("W.json", 'r')
+    s=open("C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/W.txt", 'r')
     serv_w=s.read()
-    s_t = tk.Label(window, text = "Service Words", font='Times 30')
-    serv_text = tk.Label(window, text=serv_w, borderwidth=3, relief='solid', font='Times 20', justify='center')
-    s_t.place(x=360+360, y=250)
-    serv_text.place(x=360+360, y=300)
+    # s_t = tk.Label(window, text = "Service Words", font='Times 30')
+    # serv_text = tk.Label(window, text=serv_w, borderwidth=3, relief='solid', font='Times 20', justify='center')
+    # s_t.place(x=360+360, y=250)
+    # serv_text.place(x=360+360, y=300)
 
 
 def check(tokens, token_class, token_value):
@@ -53,7 +53,7 @@ for separator in SEPARATORS:
     check(tokens, 'R', separator)
 
 # файл, содержащий текст на входном языке программирования
-f = open('input.txt', 'r')
+f = open('C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/input.txt', 'r')
 input_sequence = f.read()
 f.close()
 
@@ -271,20 +271,15 @@ while i < len(input_sequence):
 
 # файлы, содержащие все таблицы лексем
 for token_class in tokens.keys():
-    with open('%s.txt' % token_class, 'w') as write_file:
+    with open('C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/%s.txt' % token_class, 'w') as write_file: ##############
         data = {val: key for key, val in tokens[token_class].items()}
         json.dump(data, write_file, indent=4, ensure_ascii=False)
 
 # файл, содержащий последовательность кодов лексем входной программы
-f = open('tokens.txt', 'w')
+f = open('C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/tokens.txt', 'w') ###############
 f.write(output_sequence)
 f.close()
 
-window = tk.Tk()
-button = tk.Button(window, text="Запуск лексического анализатора", font="Times 20", command = Analyze)
-p_t = tk.Label(window, text = "Текст программы:", font='Times 30')
-program_text = tk.Label(window, text=input_sequence, borderwidth=3, relief='solid', font='Times 20', justify='left')
-button.pack()
-p_t.place(y=250)
-program_text.place(y=300)
-window.mainloop()
+
+
+Analyze()

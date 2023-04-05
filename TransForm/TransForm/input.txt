@@ -1,0 +1,29 @@
+<?php
+const a = 5;
+$b = 3e-5;
+if a > $b
+{
+while a * a < $b
+{
+a * $b
+}
+}
+else $b - a
+echo $b
+?>
+
+
+<?php
+const a = 5.23;
+$b = 3;
+if gettype(a) != "integer"
+{
+$s=1
+while b>1
+{
+$s=$b*($b-1)
+$b=$b-1
+}
+}
+echo $b
+?>

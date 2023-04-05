@@ -124,6 +124,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="input.txt" />
     <Content Include="lib\email\_header_value_parser.py" />
     <Content Include="lib\email\_parseaddr.py" />
     <Content Include="lib\email\_policybase.py" />
@@ -582,6 +583,7 @@
     <Content Include="lib\_weakrefset.py" />
     <Content Include="lib\__future__.py" />
     <Content Include="lib\__phello__.foo.py" />
+    <Content Include="main.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
