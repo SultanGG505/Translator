@@ -28,8 +28,10 @@ namespace TransForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ScriptEngine engine = Python.CreateEngine();
-            engine.Execute("print('hello, world')");
+            string strCmdText;
+
+            strCmdText = "/C python C://Users//SultanGG505_PC//Documents//GitHub//Translator//TransForm//TransForm//main.py";
+            System.Diagnostics.Process.Start("CMD.exe", strCmdText);
         }
     }
 }

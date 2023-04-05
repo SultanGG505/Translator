@@ -1,7 +1,5 @@
 import tkinter as tk
 import json
-import sys
-sys.path.append(r"C:\Program Files\IronPython 2.7\Lib")
 
 SERVICE_WORDS = ['do', 'else', 'for', 'continue', 'if', 'echo', 'return', 'include', \
                  'while']
