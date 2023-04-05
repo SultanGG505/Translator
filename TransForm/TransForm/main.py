@@ -1,4 +1,3 @@
-import tkinter as tk
 
 
 SERVICE_WORDS = ['do', 'else', 'for', 'continue', 'if', 'echo', 'return', 'include', \
@@ -273,7 +272,7 @@ while i < len(input_sequence):
 for token_class in tokens.keys():
     with open('C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/%s.txt' % token_class, 'w') as write_file: ##############
         data = {val: key for key, val in tokens[token_class].items()}
-        json.dump(data, write_file, indent=4, ensure_ascii=False)
+        write_file.write(str(data))
 
 # файл, содержащий последовательность кодов лексем входной программы
 f = open('C:/Users/sulta/OneDrive/Документы/GitHub/Translator/TransForm/TransForm/tokens.txt', 'w') ###############

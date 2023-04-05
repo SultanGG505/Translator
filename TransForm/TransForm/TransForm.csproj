@@ -583,6 +583,7 @@
     <Content Include="lib\_weakrefset.py" />
     <Content Include="lib\__future__.py" />
     <Content Include="lib\__phello__.foo.py" />
+    <Content Include="main.exe" />
     <Content Include="main.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
