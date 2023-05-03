@@ -1,0 +1,1 @@
+<?php 1 1 НП function first_function 2 2 НП "First function" echo КП function second_function 3 2 НП "Second function" echo КП first_function 0 Ф second_function 0 Ф ?> КП

@@ -1,0 +1,1 @@
+<?php 1 1 НП $a 100 = function funct 2 2 НП $a 70 = "<h4>$a</h4>" echo КП funct 0 Ф "<h2>$a</h2>" echo КП ?>

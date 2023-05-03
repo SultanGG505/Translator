@@ -1,0 +1,1 @@
+<?php 1 1 НП $i 0 = function factor $x 2 2 НП $x 0 == М1 УПЛ 1 return М1 : $x factor $x 1 - 1 Ф * return М2 : $i 10 < М3 УПЛ $i + + $i 3 == М4 УПЛ break М4 : М2 БП М3 : "Loop stopped at i = $i" echo $a fact $i 1 Ф = $a echo ?> КП

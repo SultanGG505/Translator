@@ -113,5 +113,11 @@ namespace TransForm
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 newfrm = new Form2();//Form2 -- вторая форма
+            newfrm.Show();
+        }
     }
 }

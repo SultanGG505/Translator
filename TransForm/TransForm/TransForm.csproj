@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -86,10 +87,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +134,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C.txt" />
+    <Content Include="I.txt" />
     <Content Include="input.txt" />
     <Content Include="lib\email\_header_value_parser.py" />
     <Content Include="lib\email\_parseaddr.py" />
@@ -585,6 +597,20 @@
     <Content Include="lib\__phello__.foo.py" />
     <Content Include="main.exe" />
     <Content Include="main.py" />
+    <Content Include="N.txt" />
+    <Content Include="O.txt" />
+    <Content Include="R.txt" />
+    <Content Include="texts\Primer_1_iskhodny_kod.txt" />
+    <Content Include="texts\Primer_1_opz.txt" />
+    <Content Include="texts\Primer_1_tokeny.txt" />
+    <Content Include="texts\Primer_2_iskhodny_kod.txt" />
+    <Content Include="texts\Primer_2_opz.txt" />
+    <Content Include="texts\Primer_2_tokeny.txt" />
+    <Content Include="texts\Primer_3_iskhodny_kod.txt" />
+    <Content Include="texts\Primer_3_opz.txt" />
+    <Content Include="texts\Primer_3_tokeny.txt" />
+    <Content Include="tokens.txt" />
+    <Content Include="W.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

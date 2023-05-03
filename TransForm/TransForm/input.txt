@@ -11,8 +11,6 @@ a * $b
 else $b - a
 echo $b
 ?>
-
-
 <?php
 const a = 5.23;
 $b = 3;

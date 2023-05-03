@@ -64,3 +64,4 @@ C:\Users\sulta\OneDrive\Документы\GitHub\Translator\TransForm\TransForm
 C:\Users\sulta\OneDrive\Документы\GitHub\Translator\TransForm\TransForm\obj\Debug\TransForm.csproj.CopyComplete
 C:\Users\sulta\OneDrive\Документы\GitHub\Translator\TransForm\TransForm\obj\Debug\TransForm.exe
 C:\Users\sulta\OneDrive\Документы\GitHub\Translator\TransForm\TransForm\obj\Debug\TransForm.pdb
+C:\Users\sulta\OneDrive\Документы\GitHub\Translator\TransForm\TransForm\obj\Debug\TransForm.Form2.resources

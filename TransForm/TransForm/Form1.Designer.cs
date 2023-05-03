@@ -45,12 +45,13 @@
             this.OpersText = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
             this.VarsText = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(345, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
@@ -60,6 +61,7 @@
             // 
             // InputText
             // 
+            this.InputText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.InputText.Location = new System.Drawing.Point(28, 107);
             this.InputText.Multiline = true;
             this.InputText.Name = "InputText";
@@ -68,6 +70,7 @@
             // 
             // TokenText
             // 
+            this.TokenText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.TokenText.Location = new System.Drawing.Point(189, 107);
             this.TokenText.Multiline = true;
             this.TokenText.Name = "TokenText";
@@ -107,6 +110,7 @@
             // 
             // SpecialText
             // 
+            this.SpecialText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.SpecialText.Location = new System.Drawing.Point(378, 107);
             this.SpecialText.Multiline = true;
             this.SpecialText.Name = "SpecialText";
@@ -125,6 +129,7 @@
             // 
             // ConstText
             // 
+            this.ConstText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ConstText.Location = new System.Drawing.Point(554, 107);
             this.ConstText.Multiline = true;
             this.ConstText.Name = "ConstText";
@@ -143,6 +148,7 @@
             // 
             // NumbersText
             // 
+            this.NumbersText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.NumbersText.Location = new System.Drawing.Point(787, 107);
             this.NumbersText.Multiline = true;
             this.NumbersText.Name = "NumbersText";
@@ -161,6 +167,7 @@
             // 
             // DivisorsText
             // 
+            this.DivisorsText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.DivisorsText.Location = new System.Drawing.Point(910, 107);
             this.DivisorsText.Multiline = true;
             this.DivisorsText.Name = "DivisorsText";
@@ -179,6 +186,7 @@
             // 
             // OpersText
             // 
+            this.OpersText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.OpersText.Location = new System.Drawing.Point(1159, 107);
             this.OpersText.Multiline = true;
             this.OpersText.Name = "OpersText";
@@ -197,17 +205,30 @@
             // 
             // VarsText
             // 
+            this.VarsText.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.VarsText.Location = new System.Drawing.Point(672, 107);
             this.VarsText.Multiline = true;
             this.VarsText.Name = "VarsText";
             this.VarsText.Size = new System.Drawing.Size(100, 554);
             this.VarsText.TabIndex = 15;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1360, 31);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "ОПЗ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1462, 673);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.VarsText);
             this.Controls.Add(this.label7);
@@ -225,7 +246,7 @@
             this.Controls.Add(this.TokenText);
             this.Controls.Add(this.InputText);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -253,6 +274,7 @@
         private System.Windows.Forms.TextBox OpersText;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.TextBox VarsText;
+        private System.Windows.Forms.Button button2;
     }
 }
 
