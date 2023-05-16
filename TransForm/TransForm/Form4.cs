@@ -25,7 +25,8 @@ namespace TransForm
             
             index++;
             if (index == 1)
-            {
+            {   
+
                 string input = @"some stringy input";
                 string call = @"""c:\PHP\php.exe""";
                 string param1 = @"-f";
@@ -42,7 +43,29 @@ namespace TransForm
                 StreamReader myStreamReader2 = myProcess.StandardError;
                 string myString1 = myStreamReader1.ReadLine();
                 string myString2 = myStreamReader2.ReadLine();
-                Output.Text = myString1 + myString2;
+                Ishod.Text = File.ReadAllText("C:\\Users\\sulta\\OneDrive\\Документы\\GitHub\\Translator\\TransForm\\TransForm\\texts\\Primer_1_iskhodny_kod.txt");
+                if (myString2 != null && myString2 != "")
+                {
+                    int errorIndex = myString2.IndexOf("error:") + "error:".Length;
+                    int inIndex = myString2.IndexOf("in", errorIndex);
+                    string content = myString2.Substring(errorIndex, inIndex - errorIndex).Trim();
+
+                    // Запись последних трех слов в отдельную строку
+                    string[] words = myString2.Split(' ');
+                    int length = words.Length;
+                    string lastThreeWords = $"{words[length - 3]} {words[length - 2]} {words[length - 1]}";
+
+                    Console.WriteLine("Извлеченное содержимое: " + content);
+                    Console.WriteLine("Последние три слова: " + lastThreeWords);
+
+                    Output.Text = content + lastThreeWords;
+                }
+                else
+                {
+                    Output.Text = "Ошибок нет";
+                }
+
+
             }
              if (index == 2)
             {
@@ -62,7 +85,27 @@ namespace TransForm
                 StreamReader myStreamReader2 = myProcess.StandardError;
                 string myString1 = myStreamReader1.ReadLine();
                 string myString2 = myStreamReader2.ReadLine();
-                Output.Text = myString1 + myString2;
+                Ishod.Text = File.ReadAllText("C:\\Users\\sulta\\OneDrive\\Документы\\GitHub\\Translator\\TransForm\\TransForm\\texts\\Primer_2_iskhodny_kod.txt");
+                if (myString2 != null && myString2 != "")
+                {
+                    int errorIndex = myString2.IndexOf("error:") + "error:".Length;
+                    int inIndex = myString2.IndexOf("in", errorIndex);
+                    string content = myString2.Substring(errorIndex, inIndex - errorIndex).Trim();
+
+                    // Запись последних трех слов в отдельную строку
+                    string[] words = myString2.Split(' ');
+                    int length = words.Length;
+                    string lastThreeWords = $"{words[length - 3]} {words[length - 2]} {words[length - 1]}";
+
+                    Console.WriteLine("Извлеченное содержимое: " + content);
+                    Console.WriteLine("Последние три слова: " + lastThreeWords);
+
+                    Output.Text = content + lastThreeWords;
+                }
+                else
+                {
+                    Output.Text = "Ошибок нет";
+                }
             }
             if (index == 3)
             {
@@ -82,7 +125,27 @@ namespace TransForm
                 StreamReader myStreamReader2 = myProcess.StandardError;
                 string myString1 = myStreamReader1.ReadLine();
                 string myString2 = myStreamReader2.ReadLine();
-                Output.Text = myString1 + myString2;
+                Ishod.Text = File.ReadAllText("C:\\Users\\sulta\\OneDrive\\Документы\\GitHub\\Translator\\TransForm\\TransForm\\texts\\Primer_3_iskhodny_kod.txt");
+                if (myString2 != null && myString2 != "")
+                {
+                    int errorIndex = myString2.IndexOf("error:") + "error:".Length;
+                    int inIndex = myString2.IndexOf("in", errorIndex);
+                    string content = myString2.Substring(errorIndex, inIndex - errorIndex).Trim();
+
+                    // Запись последних трех слов в отдельную строку
+                    string[] words = myString2.Split(' ');
+                    int length = words.Length;
+                    string lastThreeWords = $"{words[length - 3]} {words[length - 2]} {words[length - 1]}";
+
+                    Console.WriteLine("Извлеченное содержимое: " + content);
+                    Console.WriteLine("Последние три слова: " + lastThreeWords);
+
+                    Output.Text = content + lastThreeWords;
+                }
+                else
+                {
+                    Output.Text = "Ошибок нет";
+                }
             }
             if (index == 4)
             {
@@ -102,7 +165,27 @@ namespace TransForm
                 StreamReader myStreamReader2 = myProcess.StandardError;
                 string myString1 = myStreamReader1.ReadLine();
                 string myString2 = myStreamReader2.ReadLine();
-                Output.Text = myString1 + myString2;
+                Ishod.Text = File.ReadAllText("C:\\Users\\sulta\\OneDrive\\Документы\\GitHub\\Translator\\TransForm\\TransForm\\texts\\Primer_4_iskhodny_kod.txt");
+                if (myString2 != null && myString2 != "")
+                {
+                    int errorIndex = myString2.IndexOf("error:") + "error:".Length;
+                    int inIndex = myString2.IndexOf("in", errorIndex);
+                    string content = myString2.Substring(errorIndex, inIndex - errorIndex).Trim();
+
+                    // Запись последних трех слов в отдельную строку
+                    string[] words = myString2.Split(' ');
+                    int length = words.Length;
+                    string lastThreeWords = $"{words[length - 3]} {words[length - 2]} {words[length - 1]}";
+
+                    Console.WriteLine("Извлеченное содержимое: " + content);
+                    Console.WriteLine("Последние три слова: " + lastThreeWords);
+
+                    Output.Text = content + lastThreeWords;
+                }
+                else
+                {
+                    Output.Text = "Ошибок нет";
+                }
             }
             
            
@@ -128,7 +211,27 @@ namespace TransForm
             StreamReader myStreamReader2 = myProcess.StandardError;
             string myString1 = myStreamReader1.ReadLine();
             string myString2 = myStreamReader2.ReadLine();
-            Output.Text = myString1 + myString2;
+            Ishod.Text = File.ReadAllText("C:\\Users\\sulta\\OneDrive\\Документы\\GitHub\\Translator\\TransForm\\TransForm\\texts\\Primer_1_iskhodny_kod.txt");
+            if (myString2 != null && myString2 != "")
+            {
+                int errorIndex = myString2.IndexOf("error:") + "error:".Length;
+                int inIndex = myString2.IndexOf("in", errorIndex);
+                string content = myString2.Substring(errorIndex, inIndex - errorIndex).Trim();
+
+                // Запись последних трех слов в отдельную строку
+                string[] words = myString2.Split(' ');
+                int length = words.Length;
+                string lastThreeWords = $"{words[length - 3]} {words[length - 2]} {words[length - 1]}";
+
+                Console.WriteLine("Извлеченное содержимое: " + content);
+                Console.WriteLine("Последние три слова: " + lastThreeWords);
+
+                Output.Text = content + lastThreeWords;
+            }
+            else
+            {
+                Output.Text = "Ошибок нет";
+            }
         }
     }
 }

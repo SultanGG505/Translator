@@ -72,12 +72,12 @@ namespace TransForm
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(821, 12);
+            this.textBox1.Location = new System.Drawing.Point(774, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 53);
+            this.textBox1.Size = new System.Drawing.Size(493, 154);
             this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "Выходной текст на СИ";
+            this.textBox1.Text = "Результат работы синтаксического анализатора";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
@@ -92,10 +92,10 @@ namespace TransForm
             // 
             // Output
             // 
-            this.Output.Location = new System.Drawing.Point(750, 71);
+            this.Output.Location = new System.Drawing.Point(735, 189);
             this.Output.Multiline = true;
             this.Output.Name = "Output";
-            this.Output.Size = new System.Drawing.Size(405, 496);
+            this.Output.Size = new System.Drawing.Size(565, 357);
             this.Output.TabIndex = 20;
             // 
             // Ishod
