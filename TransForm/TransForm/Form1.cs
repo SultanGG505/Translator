@@ -125,5 +125,11 @@ namespace TransForm
             Form3 newfrm = new Form3();//Form3
             newfrm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 newfrm = new Form4();//Form4
+            newfrm.Show();
+        }
     }
 }
