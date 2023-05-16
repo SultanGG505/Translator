@@ -93,6 +93,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -599,6 +608,7 @@
     <Content Include="main.py" />
     <Content Include="N.txt" />
     <Content Include="O.txt" />
+    <Content Include="OPZ.py" />
     <Content Include="R.txt" />
     <Content Include="texts\Primer_1_iskhodny_kod.txt" />
     <Content Include="texts\Primer_1_opz.txt" />
@@ -609,7 +619,11 @@
     <Content Include="texts\Primer_3_iskhodny_kod.txt" />
     <Content Include="texts\Primer_3_opz.txt" />
     <Content Include="texts\Primer_3_tokeny.txt" />
+    <Content Include="texts\Primer_4_iskhodny_kod.txt" />
+    <Content Include="texts\Primer_4_opz.txt" />
+    <Content Include="texts\Primer_4_tokeny.txt" />
     <Content Include="tokens.txt" />
+    <Content Include="trans.py" />
     <Content Include="W.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

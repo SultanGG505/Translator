@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void second_function();
+
+void first_function() {
+  printf("First function\n");
+  second_function();
+}
+
+void second_function() {
+  printf("Second function\n");
+}
+
+int main() {
+  first_function();
+  second_function();
+  return 0;
+}

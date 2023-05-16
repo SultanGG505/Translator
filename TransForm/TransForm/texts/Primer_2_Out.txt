@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int a = 100;
+
+void funct() {
+    int a = 70;
+    printf("<h4>%d</h4>", a);
+}
+
+int main() {
+    funct();
+    printf("<h2>%d</h2>", a);
+    return 0;
+}
