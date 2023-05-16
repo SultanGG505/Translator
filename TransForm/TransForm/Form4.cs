@@ -25,8 +25,8 @@ namespace TransForm
             
             index++;
             if (index == 1)
-            {   
-
+            {
+                label1.Text = "№1";
                 string input = @"some stringy input";
                 string call = @"""c:\PHP\php.exe""";
                 string param1 = @"-f";
@@ -69,6 +69,7 @@ namespace TransForm
             }
              if (index == 2)
             {
+                label1.Text = "№2";
                 string input = @"some stringy input";
                 string call = @"""c:\PHP\php.exe""";
                 string param1 = @"-f";
@@ -109,6 +110,7 @@ namespace TransForm
             }
             if (index == 3)
             {
+                label1.Text = "№3";
                 string input = @"some stringy input";
                 string call = @"""c:\PHP\php.exe""";
                 string param1 = @"-f";
@@ -149,6 +151,7 @@ namespace TransForm
             }
             if (index == 4)
             {
+                label1.Text = "№4";
                 string input = @"some stringy input";
                 string call = @"""c:\PHP\php.exe""";
                 string param1 = @"-f";
@@ -195,6 +198,7 @@ namespace TransForm
         private void button2_Click(object sender, EventArgs e)
         {
             index = 1;
+            label1.Text = "№1";
             string input = @"some stringy input";
             string call = @"""c:\PHP\php.exe""";
             string param1 = @"-f";

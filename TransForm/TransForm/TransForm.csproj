@@ -637,6 +637,7 @@
     <Content Include="texts\Primer_4_opz.txt" />
     <Content Include="texts\Primer_4_tokeny.txt" />
     <Content Include="tokens.txt" />
+    <Content Include="syntactic.py" />
     <Content Include="trans.py" />
     <Content Include="W.txt" />
   </ItemGroup>

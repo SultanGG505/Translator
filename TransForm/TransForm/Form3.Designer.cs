@@ -43,14 +43,14 @@ namespace TransForm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(658, 681);
+            this.label1.Location = new System.Drawing.Point(688, 687);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 17;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(832, 617);
+            this.button2.Location = new System.Drawing.Point(834, 617);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 57);
             this.button2.TabIndex = 16;
@@ -97,7 +97,7 @@ namespace TransForm
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(658, 617);
+            this.button1.Location = new System.Drawing.Point(660, 617);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 57);
             this.button1.TabIndex = 12;
