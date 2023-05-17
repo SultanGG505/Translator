@@ -36,6 +36,8 @@ namespace TransForm
                 myProcessStartInfo.UseShellExecute = false;
                 myProcessStartInfo.RedirectStandardError = true;
                 myProcessStartInfo.RedirectStandardOutput = true;
+                myProcessStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                myProcessStartInfo.CreateNoWindow =true;
                 myProcessStartInfo.Arguments = string.Format("{0} {1} {2}", param1, param2, input);
                 myProcess.StartInfo = myProcessStartInfo;
                 myProcess.Start();
@@ -79,6 +81,8 @@ namespace TransForm
                 myProcessStartInfo.UseShellExecute = false;
                 myProcessStartInfo.RedirectStandardError = true;
                 myProcessStartInfo.RedirectStandardOutput = true;
+                myProcessStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                myProcessStartInfo.CreateNoWindow = true;
                 myProcessStartInfo.Arguments = string.Format("{0} {1} {2}", param1, param2, input);
                 myProcess.StartInfo = myProcessStartInfo;
                 myProcess.Start();
@@ -120,6 +124,8 @@ namespace TransForm
                 myProcessStartInfo.UseShellExecute = false;
                 myProcessStartInfo.RedirectStandardError = true;
                 myProcessStartInfo.RedirectStandardOutput = true;
+                myProcessStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                myProcessStartInfo.CreateNoWindow = true;
                 myProcessStartInfo.Arguments = string.Format("{0} {1} {2}", param1, param2, input);
                 myProcess.StartInfo = myProcessStartInfo;
                 myProcess.Start();
@@ -161,6 +167,8 @@ namespace TransForm
                 myProcessStartInfo.UseShellExecute = false;
                 myProcessStartInfo.RedirectStandardError = true;
                 myProcessStartInfo.RedirectStandardOutput = true;
+                myProcessStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                myProcessStartInfo.CreateNoWindow = true;
                 myProcessStartInfo.Arguments = string.Format("{0} {1} {2}", param1, param2, input);
                 myProcess.StartInfo = myProcessStartInfo;
                 myProcess.Start();
@@ -208,6 +216,8 @@ namespace TransForm
             myProcessStartInfo.UseShellExecute = false;
             myProcessStartInfo.RedirectStandardError = true;
             myProcessStartInfo.RedirectStandardOutput = true;
+            myProcessStartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            myProcessStartInfo.CreateNoWindow = true;
             myProcessStartInfo.Arguments = string.Format("{0} {1} {2}", param1, param2, input);
             myProcess.StartInfo = myProcessStartInfo;
             myProcess.Start();
